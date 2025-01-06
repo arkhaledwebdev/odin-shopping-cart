@@ -1,0 +1,21 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  min-height: 200px;
+}
+
+.errorIcon {
+  color: var(--error);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  color: var(--error);
+  font-size: 1.2rem;
+  font-weight: 500;
+}

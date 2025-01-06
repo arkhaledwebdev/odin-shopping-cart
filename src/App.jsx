@@ -22,8 +22,28 @@ function App() {
     });
   };
 
+  const removeFromCart = (product) => {
+    setCart((currentCart) => {
+      return currentCart.map((item) =>
+        item.id === product.id ? { ...item, quantity: item.quantity - 1 } : item
+      );
+    });
+  };
+
+  const deleteFromCart = (product) => {
+    setCart((currentCart) => {
+      return currentCart.filter((item) => item.id !== product.id);
+    });
+  };
+
   const getCartCount = () => {
     return cart.reduce((total, item) => total + item.quantity, 0);
+  };
+
+  const getCartTotalPrice = () => {
+    return cart
+      .reduce((total, item) => total + item.price * item.quantity, 0)
+      .toFixed(2);
   };
 
   return (
@@ -46,7 +66,16 @@ function App() {
           </div>
         </div>
       </nav>
-      <Outlet context={{ cart, addToCart, getCartCount }} />
+      <Outlet
+        context={{
+          cart,
+          addToCart,
+          removeFromCart,
+          deleteFromCart,
+          getCartCount,
+          getCartTotalPrice,
+        }}
+      />
     </div>
   );
 }
