@@ -57,7 +57,7 @@
 }
 
 .cartButton {
-  background-color: var(--primary);
+  background-color: #4d75b7;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -66,7 +66,7 @@
 }
 
 .cartButton:hover {
-  background-color: var(--accent);
+  background-color: #648ccf;
   transform: translateY(-2px);
   cursor: pointer;
 }

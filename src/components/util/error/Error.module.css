@@ -9,13 +9,13 @@
 }
 
 .errorIcon {
-  color: var(--error);
+  color: #dc3545;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .errorMessage {
-  color: var(--error);
+  color: #dc3545;
   font-size: 1.2rem;
   font-weight: 500;
 }

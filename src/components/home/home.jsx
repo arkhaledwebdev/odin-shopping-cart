@@ -1,4 +1,5 @@
 import styles from "./Home.module.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -15,7 +16,9 @@ function Home() {
             <p className={styles.heroSubtitle}>
               Explore the latest tech devices at the best prices
             </p>
-            <button className={styles.heroButton}>Shop Now</button>
+            <Link to="/shop">
+              <button className={styles.heroButton}>Shop Now</button>
+            </Link>
           </div>
         </div>
       </section>

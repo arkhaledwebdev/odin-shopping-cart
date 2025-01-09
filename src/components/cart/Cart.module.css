@@ -78,12 +78,12 @@
 }
 
 .deleteButton {
-  color: var(--error);
-  border-color: var(--error);
+  color: #dc3545;
+  border-color: #dc3545;
 }
 
 .deleteButton:hover {
-  background-color: var(--error);
+  background-color: #dc3545;
   color: white;
 }
 

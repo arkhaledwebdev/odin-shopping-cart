@@ -50,7 +50,7 @@
 .heroButton {
   padding: 1rem 2rem;
   font-size: 1.125rem;
-  background-color: var(--primary);
+  background-color: #4d75b7;
   color: white;
   border: none;
   border-radius: 0.375rem;
@@ -58,7 +58,7 @@
 }
 
 .heroButton:hover {
-  background-color: var(--accent);
+  background-color: #648ccf;
   transform: translateY(-2px);
   cursor: pointer;
 }
